@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Webpage Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Assignment 1: Frontend Web Development</h1>
+        <p>Task 2</p>
+    </div>
+    <div class="nav-bar">
+        <a href="index.html">Task 1</a>
+        <a href="task2.html" class="active">Task 2</a>
+        <a href="task3.html">Task 3</a>
+        <a href="task4.html">Task 4</a>
+    </div>
+
+    <div class="container">
+        
+        <div class="sidebar">
+            <h3>Quick Menu</h3>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#layout-rules">Layout Rules</a></li>
+                <li><a href="#tech-details">Technical Details</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2 id="overview">Task 2 Overview</h2>
+            <p>
+                This webpage demonstrates a classic multi-column webpage layout created strictly without modern layout tools like CSS Flexbox or CSS Grid. Instead, it utilizes traditional CSS properties such as <code>float: left</code>, <code>float: right</code>, and block-level <code>div</code> elements.
+            </p>
+
+            <h3 id="layout-rules">Layout Implementation</h3>
+            <p>
+                The structural architecture consists of a full-width header at the top, followed by a navigation bar. The middle section is divided into two distinct floating columns: a fixed-width sidebar menu on the left and a flexible main content box on the right.
+            </p>
+
+            <h3 id="tech-details">CSS Float & Clear Mechanics</h3>
+            <p>
+                When elements are floated, they are removed from the normal document flow. To prevent the footer from collapsing or overlapping into the middle content section, a clearing mechanism (<code>clear: both</code>) is applied to the footer element.
+            </p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Alikhan Smagul. Created for Astana IT University - Web Development Course.</p>
+    </div>
+
+</body>
+</html>
